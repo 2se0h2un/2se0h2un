@@ -1,0 +1,18 @@
+basic_cost=12,100
+voice=1.98
+data=55
+voice_time=float(input("음성 통화 시간(초):"))
+data_use=float(input("데이터 사용량(MB):"))
+voice_cost=voice_time*voice
+data_cost=data_use*data
+print(basic_cost)
+print("음성 통화 요금:",voice_cost)
+print("데이터 사용 요금:",data_cost)
+print("총 요금:",basic_cost+voice_cost+data_cost)
+
+#이렇게 하면 
+# Traceback (most recent call last):
+  File "/Users/leeseohyun02/Desktop/대1/소웨이/voice_call.py", line 11, in <module>
+    print("총 요금:",basic_cost+voice_cost+data_cost)
+TypeError: can only concatenate tuple (not "float") to tuple
+>>> #아니 왜...........
